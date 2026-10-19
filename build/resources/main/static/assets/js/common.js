@@ -79,7 +79,66 @@
       signup.textContent = '회원가입';
       nav.append(login, signup);
     }
+    nav.append(createHeaderMenu());
     return me;
+  }
+
+  var MENU_ITEMS = [
+    { href: '/support/index.html', label: '고객센터' },
+    { href: '/settings/index.html', label: '설정' }
+  ];
+
+  /** 헤더 맨 오른쪽 메뉴 버튼: 누르면 고객센터·설정 링크가 펼쳐진다 */
+  function createHeaderMenu() {
+    var wrap = document.createElement('div');
+    wrap.className = 'header-menu';
+
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'header-menu-button';
+    button.setAttribute('aria-label', '메뉴');
+    button.setAttribute('aria-haspopup', 'true');
+    button.setAttribute('aria-expanded', 'false');
+    button.setAttribute('aria-controls', 'header-menu-list');
+    var icon = document.createElement('img');
+    icon.src = '/assets/img/menu.svg';
+    icon.alt = '';
+    icon.width = 24;
+    icon.height = 24;
+    button.append(icon);
+
+    var list = document.createElement('ul');
+    list.id = 'header-menu-list';
+    list.className = 'header-menu-list';
+    list.hidden = true;
+    MENU_ITEMS.forEach(function (item) {
+      var li = document.createElement('li');
+      var link = document.createElement('a');
+      link.href = item.href;
+      link.textContent = item.label;
+      if (window.location.pathname === item.href) link.setAttribute('aria-current', 'page');
+      li.append(link);
+      list.append(li);
+    });
+
+    function setOpen(open) {
+      list.hidden = !open;
+      button.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    button.addEventListener('click', function () { setOpen(list.hidden); });
+    document.addEventListener('click', function (event) {
+      if (!wrap.contains(event.target)) setOpen(false);
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !list.hidden) {
+        setOpen(false);
+        button.focus();
+      }
+    });
+
+    wrap.append(button, list);
+    return wrap;
   }
 
   window.Ui = {

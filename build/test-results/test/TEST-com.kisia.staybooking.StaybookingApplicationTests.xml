@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kisia.staybooking.StaybookingApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-17T09:40:15.845Z" hostname="DESKTOP-N276M3B" time="0.429">
+<testsuite name="com.kisia.staybooking.StaybookingApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-19T08:55:11.505Z" hostname="DESKTOP-N276M3B" time="0.424">
   <properties/>
-  <testcase name="contextLoads()" classname="com.kisia.staybooking.StaybookingApplicationTests" time="0.003"/>
-  <system-out><![CDATA[2026-10-17T18:40:14.855+09:00  INFO 5204 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kisia.staybooking.StaybookingApplicationTests]: StaybookingApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-10-17T18:40:14.856+09:00  INFO 5204 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kisia.staybooking.StaybookingApplication for test class com.kisia.staybooking.StaybookingApplicationTests
-2026-10-17T18:40:14.857+09:00  INFO 5204 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kisia.staybooking.StaybookingApplicationTests]: StaybookingApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-10-17T18:40:14.858+09:00  INFO 5204 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kisia.staybooking.StaybookingApplication for test class com.kisia.staybooking.StaybookingApplicationTests
+  <testcase name="contextLoads()" classname="com.kisia.staybooking.StaybookingApplicationTests" time="0.002"/>
+  <system-out><![CDATA[2026-10-19T17:55:11.506+09:00  INFO 39723 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kisia.staybooking.StaybookingApplicationTests]: StaybookingApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-19T17:55:11.507+09:00  INFO 39723 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kisia.staybooking.StaybookingApplication for test class com.kisia.staybooking.StaybookingApplicationTests
+2026-10-19T17:55:11.508+09:00  INFO 39723 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kisia.staybooking.StaybookingApplicationTests]: StaybookingApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-19T17:55:11.509+09:00  INFO 39723 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kisia.staybooking.StaybookingApplication for test class com.kisia.staybooking.StaybookingApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -16,32 +16,32 @@
 
  :: Spring Boot ::                (v4.1.1)
 
-2026-10-17T18:40:14.873+09:00  INFO 5204 --- [    Test worker] c.k.s.StaybookingApplicationTests        : Starting StaybookingApplicationTests using Java 25.0.2 with PID 5204 (started by arc in /home/arc/TP/staybooking)
-2026-10-17T18:40:14.874+09:00  INFO 5204 --- [    Test worker] c.k.s.StaybookingApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2026-10-17T18:40:14.965+09:00  INFO 5204 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-10-17T18:40:14.973+09:00  INFO 5204 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 6 JPA repository interfaces.
-2026-10-17T18:40:15.019+09:00  INFO 5204 --- [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-10-17T18:40:15.034+09:00  INFO 5204 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-10-17T18:40:15.034+09:00  INFO 5204 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2026-10-17T18:40:15.036+09:00  INFO 5204 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn26: url=jdbc:h2:mem:dd124730-d440-4714-878c-d2f136d095f1 user=SA
-2026-10-17T18:40:15.036+09:00  INFO 5204 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2026-10-17T18:40:15.037+09:00  INFO 5204 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:dd124730-d440-4714-878c-d2f136d095f1]
+2026-10-19T17:55:11.526+09:00  INFO 39723 --- [    Test worker] c.k.s.StaybookingApplicationTests        : Starting StaybookingApplicationTests using Java 25.0.2 with PID 39723 (started by arc in /home/arc/TP/staybooking)
+2026-10-19T17:55:11.526+09:00  INFO 39723 --- [    Test worker] c.k.s.StaybookingApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2026-10-19T17:55:11.609+09:00  INFO 39723 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-19T17:55:11.621+09:00  INFO 39723 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 6 JPA repository interfaces.
+2026-10-19T17:55:11.667+09:00  INFO 39723 --- [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-19T17:55:11.681+09:00  INFO 39723 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-19T17:55:11.681+09:00  INFO 39723 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-10-19T17:55:11.684+09:00  INFO 39723 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn26: url=jdbc:h2:mem:82612389-5f59-4cbc-956c-77e2bc1711f7 user=SA
+2026-10-19T17:55:11.685+09:00  INFO 39723 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-10-19T17:55:11.687+09:00  INFO 39723 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:82612389-5f59-4cbc-956c-77e2bc1711f7]
 	Database driver: H2 JDBC Driver
 	Database dialect: H2Dialect
 	Database version: 2.3.232
-	Default catalog/schema: DD124730-D440-4714-878C-D2F136D095F1/PUBLIC
+	Default catalog/schema: 82612389-5F59-4CBC-956C-77E2BC1711F7/PUBLIC
 	Autocommit mode: undefined/unknown
 	Isolation level: READ_COMMITTED [default READ_COMMITTED]
 	JDBC fetch size: 100
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-10-17T18:40:15.129+09:00  INFO 5204 --- [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-10-17T18:40:15.146+09:00  INFO 5204 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-10-17T18:40:15.211+09:00  WARN 5204 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-10-17T18:40:15.215+09:00  INFO 5204 --- [    Test worker] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
-2026-10-17T18:40:15.278+09:00  INFO 5204 --- [    Test worker] c.k.s.StaybookingApplicationTests        : Started StaybookingApplicationTests in 0.417 seconds (process running for 9.089)
+2026-10-19T17:55:11.767+09:00  INFO 39723 --- [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-19T17:55:11.783+09:00  INFO 39723 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-19T17:55:11.866+09:00  WARN 39723 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-19T17:55:11.869+09:00  INFO 39723 --- [    Test worker] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-10-19T17:55:11.926+09:00  INFO 39723 --- [    Test worker] c.k.s.StaybookingApplicationTests        : Started StaybookingApplicationTests in 0.414 seconds (process running for 7.847)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

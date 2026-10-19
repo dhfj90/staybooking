@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kisia.staybooking.BookingServiceTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-17T09:40:13.400Z" hostname="DESKTOP-N276M3B" time="0.5">
+<testsuite name="com.kisia.staybooking.BookingServiceTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-19T08:55:09.350Z" hostname="DESKTOP-N276M3B" time="0.525">
   <properties/>
-  <testcase name="rejectsOverCapacity()" classname="com.kisia.staybooking.BookingServiceTests" time="0.027"/>
-  <testcase name="allowsTwoUnitsButRejectsThirdOnTheSameNight()" classname="com.kisia.staybooking.BookingServiceTests" time="0.05"/>
-  <system-out><![CDATA[2026-10-17T18:40:12.401+09:00  INFO 5204 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kisia.staybooking.BookingServiceTests]: BookingServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-10-17T18:40:12.411+09:00  INFO 5204 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kisia.staybooking.StaybookingApplication for test class com.kisia.staybooking.BookingServiceTests
-2026-10-17T18:40:12.412+09:00  INFO 5204 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kisia.staybooking.BookingServiceTests]: BookingServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-10-17T18:40:12.421+09:00  INFO 5204 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kisia.staybooking.StaybookingApplication for test class com.kisia.staybooking.BookingServiceTests
+  <testcase name="rejectsOverCapacity()" classname="com.kisia.staybooking.BookingServiceTests" time="0.036"/>
+  <testcase name="allowsTwoUnitsButRejectsThirdOnTheSameNight()" classname="com.kisia.staybooking.BookingServiceTests" time="0.06"/>
+  <system-out><![CDATA[2026-10-19T17:55:09.351+09:00  INFO 39723 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kisia.staybooking.BookingServiceTests]: BookingServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-19T17:55:09.364+09:00  INFO 39723 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kisia.staybooking.StaybookingApplication for test class com.kisia.staybooking.BookingServiceTests
+2026-10-19T17:55:09.364+09:00  INFO 39723 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kisia.staybooking.BookingServiceTests]: BookingServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-19T17:55:09.375+09:00  INFO 39723 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kisia.staybooking.StaybookingApplication for test class com.kisia.staybooking.BookingServiceTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -17,27 +17,27 @@
 
  :: Spring Boot ::                (v4.1.1)
 
-2026-10-17T18:40:12.446+09:00  INFO 5204 --- [    Test worker] c.kisia.staybooking.BookingServiceTests  : Starting BookingServiceTests using Java 25.0.2 with PID 5204 (started by arc in /home/arc/TP/staybooking)
-2026-10-17T18:40:12.447+09:00  INFO 5204 --- [    Test worker] c.kisia.staybooking.BookingServiceTests  : No active profile set, falling back to 1 default profile: "default"
-2026-10-17T18:40:12.518+09:00  INFO 5204 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-10-17T18:40:12.531+09:00  INFO 5204 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 6 JPA repository interfaces.
-2026-10-17T18:40:12.546+09:00  INFO 5204 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
-2026-10-17T18:40:12.558+09:00  INFO 5204 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:2f801b59-18d6-48bf-9c52-4553d13ec140;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2026-10-17T18:40:12.577+09:00  INFO 5204 --- [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-10-17T18:40:12.594+09:00  INFO 5204 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-10-17T18:40:12.596+09:00  INFO 5204 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:2f801b59-18d6-48bf-9c52-4553d13ec140]
+2026-10-19T17:55:09.401+09:00  INFO 39723 --- [    Test worker] c.kisia.staybooking.BookingServiceTests  : Starting BookingServiceTests using Java 25.0.2 with PID 39723 (started by arc in /home/arc/TP/staybooking)
+2026-10-19T17:55:09.401+09:00  INFO 39723 --- [    Test worker] c.kisia.staybooking.BookingServiceTests  : No active profile set, falling back to 1 default profile: "default"
+2026-10-19T17:55:09.482+09:00  INFO 39723 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-19T17:55:09.493+09:00  INFO 39723 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 6 JPA repository interfaces.
+2026-10-19T17:55:09.506+09:00  INFO 39723 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-10-19T17:55:09.515+09:00  INFO 39723 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:d92219e2-6300-4ad9-8eda-23d4874e4a4b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-10-19T17:55:09.530+09:00  INFO 39723 --- [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-19T17:55:09.546+09:00  INFO 39723 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-19T17:55:09.547+09:00  INFO 39723 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:d92219e2-6300-4ad9-8eda-23d4874e4a4b]
 	Database driver: H2 JDBC Driver
 	Database dialect: H2Dialect
 	Database version: 2.3.232
-	Default catalog/schema: 2F801B59-18D6-48BF-9C52-4553D13EC140/PUBLIC
+	Default catalog/schema: D92219E2-6300-4AD9-8EDA-23D4874E4A4B/PUBLIC
 	Autocommit mode: undefined/unknown
 	Isolation level: READ_COMMITTED [default READ_COMMITTED]
 	JDBC fetch size: 100
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-10-17T18:40:12.704+09:00  INFO 5204 --- [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-19T17:55:09.645+09:00  INFO 39723 --- [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists accommodations cascade 
 Hibernate: drop table if exists booking_cancellation_requests cascade 
 Hibernate: drop table if exists bookings cascade 
@@ -65,8 +65,8 @@ Hibernate: alter table if exists bookings add constraint fk_bookings_room foreig
 Hibernate: alter table if exists bookings add constraint fk_bookings_user foreign key (user_id) references users
 Hibernate: alter table if exists payments add constraint fk_payments_booking foreign key (booking_id) references bookings
 Hibernate: alter table if exists rooms add constraint fk_rooms_accommodation foreign key (accommodation_id) references accommodations
-2026-10-17T18:40:12.738+09:00  INFO 5204 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-10-17T18:40:12.826+09:00  INFO 5204 --- [    Test worker] c.kisia.staybooking.BookingServiceTests  : Started BookingServiceTests in 0.4 seconds (process running for 6.637)
+2026-10-19T17:55:09.682+09:00  INFO 39723 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-19T17:55:09.773+09:00  INFO 39723 --- [    Test worker] c.kisia.staybooking.BookingServiceTests  : Started BookingServiceTests in 0.393 seconds (process running for 5.694)
 Hibernate: insert into users (created_at,email,login_id,mileage_balance,name,nickname,password_hash,phone,role,status,updated_at,user_id) values (?,?,?,?,?,?,?,?,?,?,?,default)
 Hibernate: insert into accommodations (address,check_in_time,check_out_time,created_at,description,latitude,longitude,name,status,updated_at,accommodation_id) values (?,?,?,?,?,?,?,?,?,?,default)
 Hibernate: insert into rooms (accommodation_id,capacity,created_at,description,name,price,status,total_quantity,updated_at,room_id) values (?,?,?,?,?,?,?,?,?,default)
