@@ -65,9 +65,72 @@
 
         <div class="info-card">
           <h2>보안</h2>
+
+          <div
+  id="withdraw-box"
+  class="withdraw-box"
+  hidden>
+
+  <h3>회원 탈퇴</h3>
+
+  <p>
+    탈퇴하면 계정을 다시 사용할 수 없습니다.
+    탈퇴 전 내용을 확인해 주세요.
+  </p>
+
+  <label class="withdraw-check">
+
+    <input
+      id="withdraw-agree"
+      type="checkbox">
+
+    회원 탈퇴 안내 내용을 확인했습니다.
+
+  </label>
+
+  <div class="field">
+
+    <label for="withdraw-password">
+      비밀번호 확인
+    </label>
+
+    <input
+      id="withdraw-password"
+      type="password"
+      autocomplete="current-password"
+      placeholder="비밀번호를 입력해 주세요.">
+
+  </div>
+
+  <div class="withdraw-actions">
+
+    <button
+      id="withdraw-cancel-button"
+      type="button"
+      class="btn-outline">
+      취소
+    </button>
+
+    <button
+      id="withdraw-submit-button"
+      type="button"
+      class="btn-primary">
+      회원 탈퇴
+    </button>
+
+  </div>
+
+</div>
           <ul class="link-list">
             <li><span class="link-disabled">비밀번호 변경 (준비 중)</span></li>
-            <li><span class="link-disabled danger">회원 탈퇴 (준비 중)</span></li>
+            <li>
+             <button
+                id="withdraw-open-button"
+                type="button"
+                class="withdraw-link">
+                회원 탈퇴
+               </button>
+            </li>
           </ul>
         </div>
       </section>

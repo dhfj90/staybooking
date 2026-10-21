@@ -248,4 +248,107 @@
       showSaved(save(settings));
     });
   });
+
+  /* ---------- 회원 탈퇴 mock ---------- */
+
+var withdrawOpenButton =
+  document.getElementById(
+    'withdraw-open-button'
+  );
+
+var withdrawBox =
+  document.getElementById(
+    'withdraw-box'
+  );
+
+var withdrawCancelButton =
+  document.getElementById(
+    'withdraw-cancel-button'
+  );
+
+var withdrawSubmitButton =
+  document.getElementById(
+    'withdraw-submit-button'
+  );
+
+var withdrawAgree =
+  document.getElementById(
+    'withdraw-agree'
+  );
+
+var withdrawPassword =
+  document.getElementById(
+    'withdraw-password'
+  );
+
+
+withdrawOpenButton.addEventListener(
+  'click',
+  function () {
+
+    withdrawBox.hidden = false;
+  }
+);
+
+
+withdrawCancelButton.addEventListener(
+  'click',
+  function () {
+
+    withdrawBox.hidden = true;
+
+    withdrawAgree.checked = false;
+
+    withdrawPassword.value = '';
+  }
+);
+
+
+withdrawSubmitButton.addEventListener(
+  'click',
+  function () {
+
+    if (!withdrawAgree.checked) {
+
+      alert(
+        '회원 탈퇴 안내에 동의해 주세요.'
+      );
+
+      return;
+    }
+
+
+    if (!withdrawPassword.value) {
+
+      alert(
+        '비밀번호를 입력해 주세요.'
+      );
+
+      withdrawPassword.focus();
+
+      return;
+    }
+
+
+    var confirmed =
+      confirm(
+        '정말 회원 탈퇴하시겠습니까?'
+      );
+
+    if (!confirmed) {
+      return;
+    }
+
+
+    /*
+     * 실제 API 연동 시
+     * 회원 탈퇴 API 호출로 교체
+     */
+
+    alert(
+      '회원 탈퇴 mock 테스트가 완료되었습니다.'
+    );
+  }
+);
+
 })();

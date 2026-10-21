@@ -1943,3 +1943,232 @@ input[type="file"]:focus-visible + .file-box { outline: 2px solid var(--brand); 
 
 .form-actions { display: grid; grid-template-columns: 1fr 2fr; gap: 10px; }
 .form-actions .btn-outline { margin-top: 0; height: 50px; }
+
+
+/* =========================
+   리뷰
+   ========================= */
+
+.review-section {
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.review-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.review-section-header h2 {
+  margin: 0 0 8px;
+}
+
+.review-section-description {
+  margin: 0;
+  color: #6b7280;
+}
+
+.review-summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  background: #f8f9fb;
+  border-radius: 12px;
+}
+
+.review-summary strong {
+  font-size: 28px;
+}
+
+.review-summary span {
+  font-size: 20px;
+}
+
+.review-summary p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-item {
+  padding: 24px 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.review-item:first-child {
+  border-top: 0;
+}
+
+.review-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.review-item p {
+  margin: 0 0 12px;
+  line-height: 1.7;
+}
+
+.review-item small {
+  color: #6b7280;
+}
+
+/* 리뷰 작성 폼 */
+
+.review-form {
+  margin-bottom: 28px;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.review-form h3 {
+  margin-top: 0;
+}
+
+.review-form-field {
+  margin-bottom: 18px;
+}
+
+.review-form-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.review-form select,
+.review-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #cfd5dd;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.review-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.review-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+#review-write-button {
+  box-shadow: none;
+  border: none;
+  padding: 10px 18px;
+}
+
+
+.review-item-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.review-edit-button,
+.review-delete-button {
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.review-edit-button:hover {
+  background: #f3f4f6;
+}
+
+.review-delete-button {
+  color: #dc2626;
+}
+
+.review-delete-button:hover {
+  background: #fef2f2;
+}
+
+
+.withdraw-link {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: #dc2626;
+  cursor: pointer;
+  font: inherit;
+}
+
+.withdraw-box {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  background: #fffafa;
+}
+
+.withdraw-box h3 {
+  margin-top: 0;
+}
+
+.withdraw-check {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.withdraw-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+#qna-edit-button[hidden],
+#qna-delete-button[hidden] {
+  display: none !important;
+}
+
+.review-image-help {
+  margin: 8px 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.review-image-preview {
+  margin-top: 12px;
+}
+
+.review-image-preview img {
+  display: block;
+  max-width: 240px;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.review-item-image {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 12px 0;
+}

@@ -47,7 +47,74 @@
   var IMAGE_HINT = f.imageText.textContent;
   var previewUrl = null;
 
+  var params =
+  new URLSearchParams(
+    window.location.search
+  );
+
+var editId =
+  params.get('edit');
+
+var editInquiry =
+  null;
+
+
+if (editId) {
+
+  try {
+
+    editInquiry =
+      JSON.parse(
+        sessionStorage.getItem(
+          'staybookEditInquiry'
+        )
+      );
+
+  } catch (e) {
+
+    editInquiry = null;
+  }
+
+}
+
   Ui.renderHeader();
+
+  /* ---------- 수정 모드 ---------- */
+
+if (
+  editId &&
+  editInquiry &&
+  String(editInquiry.qnaId) === String(editId)
+) {
+
+  document.querySelector('h1').textContent =
+    '1:1 문의 수정';
+
+  document.querySelector('.page-sub').textContent =
+    '문의 내용을 수정한 뒤 저장해 주세요.';
+
+  submit.textContent =
+    '문의 수정';
+
+
+  f.category.value =
+    editInquiry.category || '';
+
+  f.title.value =
+    editInquiry.title || '';
+
+  f.content.value =
+    editInquiry.content || '';
+
+  f.secret.checked =
+    editInquiry.secret !== false;
+
+
+  f.count.textContent =
+    f.content.value.length +
+    ' / ' +
+    CONTENT_MAX;
+}
 
   /* ---------- 관련 예약 ---------- */
 
@@ -186,15 +253,62 @@
      * 실제 API: POST /api/v1/qna
      * { category, bookingId, title, content, secret } + 이미지는 POST /api/v1/uploads/Images
      */
-    Ui.setLoading(submit, true, '등록 중...');
-    saveMockInquiry({
-      qnaId: Date.now(),
-      category: f.category.value,
-      title: f.title.value.trim(),
-      secret: f.secret.checked,
-      answered: false,
-      createdAt: today()
-    });
-    window.location.replace('/qna.html?inquiry=done');
+if (editId && editInquiry) {
+
+  Ui.setLoading(
+    submit,
+    true,
+    '수정 중...'
+  );
+
+  editInquiry.category =
+    f.category.value;
+
+  editInquiry.title =
+    f.title.value.trim();
+
+  editInquiry.content =
+    f.content.value.trim();
+
+  editInquiry.secret =
+    f.secret.checked;
+
+  /*
+   * 실제 API 연동 시:
+   * Q&A 수정 API 호출
+   */
+
+  sessionStorage.setItem(
+    'staybookEditInquiry',
+    JSON.stringify(editInquiry)
+  );
+
+  window.location.replace(
+    '/qna.html?inquiry=updated'
+  );
+
+} else {
+
+  Ui.setLoading(
+    submit,
+    true,
+    '등록 중...'
+  );
+
+  saveMockInquiry({
+    qnaId: Date.now(),
+    category: f.category.value,
+    title: f.title.value.trim(),
+    content: f.content.value.trim(),
+    secret: f.secret.checked,
+    answered: false,
+    createdAt: today(),
+    owned: true
+  });
+
+  window.location.replace(
+    '/qna.html?inquiry=done'
+  );
+}
   });
 })();
